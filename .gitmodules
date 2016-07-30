@@ -1,0 +1,3 @@
+[submodule "llvm.tmbundle"]
+	path = llvm.tmbundle
+	url = https://github.com/hansstimer/llvm.tmbundle

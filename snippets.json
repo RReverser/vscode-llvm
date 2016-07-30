@@ -1,0 +1,68 @@
+{
+	"alloca": {
+		"prefix": "alloca",
+		"body": "alloca ${1:type}${2:, ${1:type} ${3:numElements}}${4:, align ${5:1}}",
+		"description": "alloca",
+		"scope": "source.llvm"
+	},
+	"br": {
+		"prefix": "br",
+		"body": "br i1 ${1:cond}, label ${2:iftrue}, label ${3:iffalse}",
+		"description": "br",
+		"scope": "source.llvm"
+	},
+	"bru": {
+		"prefix": "bru",
+		"body": "br label ${1:dest}",
+		"description": "bru",
+		"scope": "source.llvm"
+	},
+	"call": {
+		"prefix": "call",
+		"body": "${1:tail} call ${2:cconv} ${3:ret_attrs} ${4:ty} ${5:${6:fnty}*} ${7:fnptrval}(${8:})",
+		"description": "call",
+		"scope": "source.llvm"
+	},
+	"def": {
+		"prefix": "def",
+		"body": "define ${1:linkage }${2:visiblity }${3:cconv }${4:retattrs }${5:ResultType} @${6:FunctionName} (${7: }) {\n\t${8: }\n}",
+		"description": "define",
+		"scope": "source.llvm"
+	},
+	"getel": {
+		"prefix": "getel",
+		"body": "getelementptr ${1:ptype}* ${2:ptrval}${3:, ${4:type} ${5:index}}${6:, ${7:type} ${8:index}}",
+		"description": "getelemntptr",
+		"scope": "source.llvm"
+	},
+	"hello": {
+		"prefix": "hello",
+		"body": "@msg = internal constant [13 x i8] c\"Hello World!\\00\"\n\ndeclare i32 @puts(i8*)\n\ndefine i32 @main() {\n\tcall i32 @puts(i8* getelementptr inbounds ([13 x i8]* @msg, i32 0, i32 0))\n\tret i32 0\n}",
+		"description": "hello world",
+		"scope": "source.llvm"
+	},
+	"icmp": {
+		"prefix": "icmp",
+		"body": "icmp ${1:cond} ${2:type} ${3:op1}, ${4:op2}",
+		"description": "icmp",
+		"scope": "source.llvm"
+	},
+	"load": {
+		"prefix": "load",
+		"body": "load ${1:volatile }${2:type}* ${3:pointer}${4:, align ${5:1}${7:, !nontemporal !${8:index}}}",
+		"description": "load",
+		"scope": "source.llvm"
+	},
+	"ret": {
+		"prefix": "ret",
+		"body": "ret ${1:type} ${2:value}",
+		"description": "ret",
+		"scope": "source.llvm"
+	},
+	"store": {
+		"prefix": "store",
+		"body": "store ${1:volatile }${2:type}* ${3:source}, ${4:type}* ${5:destPtr}${6:${7:, align ${8:1}}${9:, !nontemporal !${10:index}}}\n",
+		"description": "store",
+		"scope": "source.llvm"
+	}
+}
