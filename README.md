@@ -1,13 +1,28 @@
-# README
-## This is the README for your extension "llvm" 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# LLVM
 
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
+Syntax highlighting and snippets for LLVM IR (LLVM Intermediate Representation).
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Syntax highlighting and snippets were taken from [LLVM TextMate Bundle](https://github.com/hansstimer/llvm.tmbundle).
+## Features
 
-** Enjoy!**
+- Basic syntax highlighting
+- Snippets
+
+### Snippets
+Instruction | Short Cut
+---|---
+alloca|alloca
+branch conditionally|br
+branch unconditionally|bru
+call|call
+def|def
+getelementptr|getelementptr
+hello world program|hello
+icmp|icmp
+load|load
+ret|ret
+store|store
+
+## Known Issues
+
+- Please report any issues or suggestions you find on [GitHub](https://github.com/RReverser/vscode-llvm/issues).
