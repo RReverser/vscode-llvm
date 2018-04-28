@@ -3,6 +3,7 @@
 Syntax highlighting and snippets for LLVM IR (LLVM Intermediate Representation).
 
 Syntax highlighting and snippets were taken from [LLVM TextMate Bundle](https://github.com/hansstimer/llvm.tmbundle).
+
 ## Features
 
 - Basic syntax highlighting
@@ -25,4 +26,4 @@ store|store
 
 ## Known Issues
 
-- Please report any issues or suggestions you find on [GitHub](https://github.com/RReverser/vscode-llvm/issues).
+- Please report grammar issues or suggestions to the [LLVM TextMate Bundle repository](https://github.com/hansstimer/llvm.tmbundle/issues) and extension-related suggestions [here](https://github.com/RReverser/vscode-llvm/issues).
