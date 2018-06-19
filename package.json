@@ -2,13 +2,13 @@
 	"name": "llvm",
 	"displayName": "LLVM",
 	"description": "LLVM IR syntax highlight",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "RReverser",
 	"engines": {
 		"vscode": "^0.10.1"
 	},
 	"categories": [
-		"Languages",
+		"Programming Languages",
         "Snippets"
 	],
 	"contributes": {
