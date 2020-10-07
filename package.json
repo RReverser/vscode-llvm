@@ -2,38 +2,50 @@
 	"name": "llvm",
 	"displayName": "LLVM",
 	"description": "LLVM IR syntax highlight",
-	"version": "0.0.3",
+	"version": "0.1.0",
 	"publisher": "RReverser",
 	"engines": {
 		"vscode": "^0.10.1"
 	},
 	"categories": [
 		"Programming Languages",
-        "Snippets"
+		"Snippets"
 	],
 	"contributes": {
-		"languages": [{
-			"id": "llvm",
-			"aliases": ["LLVM", "llvm"],
-			"extensions": [".ll",".s"],
-			"configuration": "./llvm.configuration.json"
-		}],
-		"grammars": [{
-			"language": "llvm",
-			"scopeName": "source.llvm",
-			"path": "./llvm.tmbundle/Syntaxes/LLVM.tmLanguage"
-		}],
-        "snippets": [{
-            "language": "llvm",
-            "path": "./snippets.json"
-        }]
+		"languages": [
+			{
+				"id": "llvm",
+				"aliases": [
+					"LLVM",
+					"llvm"
+				],
+				"extensions": [
+					".ll",
+					".s"
+				],
+				"configuration": "./llvm.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "llvm",
+				"scopeName": "source.llvm",
+				"path": "./llvm.tmbundle/Syntaxes/LLVM.tmLanguage"
+			}
+		],
+		"snippets": [
+			{
+				"language": "llvm",
+				"path": "./snippets.json"
+			}
+		]
 	},
 	"bugs": {
-        "url": "https://github.com/RReverser/vscode-llvm/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/RReverser/vscode-llvm.git"
-    },
-    "homepage": "https://github.com/RReverser/vscode-llvm/blob/master/README.md"
+		"url": "https://github.com/RReverser/vscode-llvm/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/RReverser/vscode-llvm.git"
+	},
+	"homepage": "https://github.com/RReverser/vscode-llvm/blob/master/README.md"
 }
