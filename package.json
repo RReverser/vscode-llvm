@@ -23,7 +23,11 @@
 					".ll",
 					".s"
 				],
-				"configuration": "./llvm.configuration.json"
+				"configuration": "./llvm.configuration.json",
+				"icon": {
+					"dark": "./icon/llvm-icon.png",
+					"light": "./icon/llvm-icon.png"
+				}
 			}
 		],
 		"grammars": [
